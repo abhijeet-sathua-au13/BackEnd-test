@@ -1,0 +1,41 @@
+{
+  "name": "media-api",
+  "version": "0.0.1",
+  "description": "API for signup login and profile",
+  "main": "main.js",
+  "scripts": {
+    "test": "babel-watch ./src/main.js",
+    "start": "npm run build && node ./build/main.js",
+    "build": "npm run clean && npm run babel-build",
+    "babel-build": "babel -d ./build ./src -s",
+    "clean": "rm -rf ./build && mkdir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Abhijeet",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
+    "babel-polyfill": "^6.26.0",
+    "babel-watch": "^7.4.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.1",
+    "helmet": "^4.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.5",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.1"
+  }
+}
